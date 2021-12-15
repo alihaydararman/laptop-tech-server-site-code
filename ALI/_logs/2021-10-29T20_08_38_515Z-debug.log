@@ -1,0 +1,60 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'prefix',
+1 verbose cli   '-g'
+1 verbose cli ]
+2 info using npm@6.14.15
+3 info using node@v14.18.0
+4 verbose stack Error: EPERM: operation not permitted, rename 'C:\Users\ALI haydar\.config\configstore\update-notifier-npm.json.2172612025' -> 'C:\Users\ALI haydar\.config\configstore\update-notifier-npm.json'
+4 verbose stack     at Object.renameSync (fs.js:797:3)
+4 verbose stack     at Function.writeFileSync [as sync] (C:\Program Files\nodejs\node_modules\npm\node_modules\write-file-atomic\index.js:224:8)
+4 verbose stack     at Configstore.set all [as all] (C:\Program Files\nodejs\node_modules\npm\node_modules\configstore\index.js:58:20)
+4 verbose stack     at Configstore.delete (C:\Program Files\nodejs\node_modules\npm\node_modules\configstore\index.js:98:12)
+4 verbose stack     at UpdateNotifier.check (C:\Program Files\nodejs\node_modules\npm\node_modules\update-notifier\index.js:87:22)
+4 verbose stack     at module.exports (C:\Program Files\nodejs\node_modules\npm\node_modules\update-notifier\index.js:151:17)
+4 verbose stack     at EventEmitter.<anonymous> (C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js:87:48)
+4 verbose stack     at processTicksAndRejections (internal/process/task_queues.js:77:11)
+5 verbose cwd c:\Projects\tourism-website-server-side
+6 verbose Windows_NT 10.0.19042
+7 verbose argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "prefix" "-g"
+8 verbose node v14.18.0
+9 verbose npm  v6.14.15
+10 error code EPERM
+11 error syscall rename
+12 error path C:\Users\ALI haydar\.config\configstore\update-notifier-npm.json.2172612025
+13 error dest C:\Users\ALI haydar\.config\configstore\update-notifier-npm.json
+14 error errno -4048
+15 error Error: EPERM: operation not permitted, rename 'C:\Users\ALI haydar\.config\configstore\update-notifier-npm.json.2172612025' -> 'C:\Users\ALI haydar\.config\configstore\update-notifier-npm.json'
+15 error     at Object.renameSync (fs.js:797:3)
+15 error     at Function.writeFileSync [as sync] (C:\Program Files\nodejs\node_modules\npm\node_modules\write-file-atomic\index.js:224:8)
+15 error     at Configstore.set all [as all] (C:\Program Files\nodejs\node_modules\npm\node_modules\configstore\index.js:58:20)
+15 error     at Configstore.delete (C:\Program Files\nodejs\node_modules\npm\node_modules\configstore\index.js:98:12)
+15 error     at UpdateNotifier.check (C:\Program Files\nodejs\node_modules\npm\node_modules\update-notifier\index.js:87:22)
+15 error     at module.exports (C:\Program Files\nodejs\node_modules\npm\node_modules\update-notifier\index.js:151:17)
+15 error     at EventEmitter.<anonymous> (C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js:87:48)
+15 error     at processTicksAndRejections (internal/process/task_queues.js:77:11)
+15 error  Error: EPERM: operation not permitted, rename 'C:\Users\ALI haydar\.config\configstore\update-notifier-npm.json.2172612025' -> 'C:\Users\ALI haydar\.config\configstore\update-notifier-npm.json'
+15 error     at Object.renameSync (fs.js:797:3)
+15 error     at Function.writeFileSync [as sync] (C:\Program Files\nodejs\node_modules\npm\node_modules\write-file-atomic\index.js:224:8)
+15 error     at Configstore.set all [as all] (C:\Program Files\nodejs\node_modules\npm\node_modules\configstore\index.js:58:20)
+15 error     at Configstore.delete (C:\Program Files\nodejs\node_modules\npm\node_modules\configstore\index.js:98:12)
+15 error     at UpdateNotifier.check (C:\Program Files\nodejs\node_modules\npm\node_modules\update-notifier\index.js:87:22)
+15 error     at module.exports (C:\Program Files\nodejs\node_modules\npm\node_modules\update-notifier\index.js:151:17)
+15 error     at EventEmitter.<anonymous> (C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js:87:48)
+15 error     at processTicksAndRejections (internal/process/task_queues.js:77:11) {
+15 error   errno: -4048,
+15 error   syscall: 'rename',
+15 error   code: 'EPERM',
+15 error   path: 'C:\\Users\\ALI haydar\\.config\\configstore\\update-notifier-npm.json.2172612025',
+15 error   dest: 'C:\\Users\\ALI haydar\\.config\\configstore\\update-notifier-npm.json'
+15 error }
+16 error The operation was rejected by your operating system.
+16 error It's possible that the file was already in use (by a text editor or antivirus),
+16 error or that you lack permissions to access it.
+16 error
+16 error If you believe this might be a permissions issue, please double-check the
+16 error permissions of the file and its containing directories, or try running
+16 error the command again as root/Administrator.
+17 verbose exit [ -4048, true ]
